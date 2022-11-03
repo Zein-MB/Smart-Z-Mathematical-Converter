@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  background-image: url(imgs/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 2em;
+  color: #fe0fb7;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e8eaf6;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  grid-gap: 2em;
+  padding: 5em 2.5em;
+  zoom: 1.2;
+  box-shadow: 0 15px 30px 5px #54545457;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+form select {
+  grid-column: 1/2;
+  transition: .3s;
+}
+
+form select:focus,
+input:first-of-type:focus {
+  outline: none;
+  border-bottom: 1px solid #fe0fb7;
+}
+
+form * {
+  padding: 20px 10px;
+  border: none;
+}
+
+form label {
+  grid-column: 1/2;
+  width: 100%;
+}
+
+form input {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form input:first-of-type {
+  transition: .3s;
+}
+
+form input:last-of-type {
+  grid-column: 2/4;
+  cursor: default;
+  transition: .3s;
+}
+
+form input:last-of-type:focus {
+  outline: none;
+}
+
+form button {
+  background-color: #fe0fb7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+form button:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.381);
+}
+
+form small {
+  position: fixed;
+  left: 83%;
+  top: 60%;
+  font-size: 13px;
+  background-color: #ddd;
+  width: 40px;
+  height: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
